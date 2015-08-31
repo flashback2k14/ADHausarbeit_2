@@ -1,5 +1,7 @@
+import funktionen.FunktionsArt;
 /**
- *
+ * Hilfsklasse
+ * erstellt von Sebastian Kloppe am 31.08.2015
  */
 public class Util {
     /**
@@ -8,18 +10,18 @@ public class Util {
      * @param konsolenParameter Konsolenparameter
      * @return FunktionsArt
      */
-    public static funktionen.FunktionsArt getFunktionsArt(String[] konsolenParameter) {
+    public static FunktionsArt getFunktionsArt(String[] konsolenParameter) {
         if (konsolenParameter != null && konsolenParameter.length > 0) {
             switch (konsolenParameter[0].toUpperCase()) {
                 case "UEBUNG6":
-                    return funktionen.FunktionsArt.UEBUNG6;
+                    return FunktionsArt.UEBUNG6;
                 case "THEMA12B":
-                    return funktionen.FunktionsArt.THEMA12B;
+                    return FunktionsArt.THEMA12B;
                 default:
-                    return funktionen.FunktionsArt.THEMA12B;
+                    return FunktionsArt.THEMA12B;
             }
         } else {
-            return funktionen.FunktionsArt.THEMA12B;
+            return FunktionsArt.THEMA12B;
         }
     }
 
@@ -64,7 +66,7 @@ public class Util {
     }
 
     /**
-     * Runden FunktionThema12B mit gegebener Mantissenlänge
+     * Methode zum runden mit gegebener Mantissenlänge
      * @param zahl zu rundende Zahl
      * @param mantisse Mantissenlänge
      * @return gerundete Zahl
@@ -76,12 +78,12 @@ public class Util {
     }
 
     /**
-     *
-     * @param funktionsArt
-     * @param x
-     * @param mantisse
+     * Methode zum ausgeben der Startwerte des Programms
+     * @param funktionsArt Funktion (UEBUNG6 oder THEMA12B)
+     * @param x x - Koordinate
+     * @param mantisse Mantissenlaenge
      */
-    public static void getStartwerte(funktionen.FunktionsArt funktionsArt, double x, int mantisse) {
+    public static void getStartwerte(FunktionsArt funktionsArt, double x, int mantisse) {
         StringBuilder sb = new StringBuilder();
         switch (funktionsArt) {
             case UEBUNG6:
