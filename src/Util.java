@@ -1,7 +1,3 @@
-package testing;
-
-import testing.funktionen.FunktionsArt;
-
 /**
  *
  */
@@ -12,18 +8,18 @@ public class Util {
      * @param konsolenParameter Konsolenparameter
      * @return FunktionsArt
      */
-    public static FunktionsArt getFunktionsArt(String[] konsolenParameter) {
+    public static funktionen.FunktionsArt getFunktionsArt(String[] konsolenParameter) {
         if (konsolenParameter != null && konsolenParameter.length > 0) {
             switch (konsolenParameter[0].toUpperCase()) {
                 case "UEBUNG6":
-                    return FunktionsArt.UEBUNG6;
+                    return funktionen.FunktionsArt.UEBUNG6;
                 case "THEMA12B":
-                    return FunktionsArt.THEMA12B;
+                    return funktionen.FunktionsArt.THEMA12B;
                 default:
-                    return FunktionsArt.THEMA12B;
+                    return funktionen.FunktionsArt.THEMA12B;
             }
         } else {
-            return FunktionsArt.THEMA12B;
+            return funktionen.FunktionsArt.THEMA12B;
         }
     }
 
@@ -85,7 +81,7 @@ public class Util {
      * @param x
      * @param mantisse
      */
-    public static void getBerechnungswerte(FunktionsArt funktionsArt, double x, int mantisse) {
+    public static void getStartwerte(funktionen.FunktionsArt funktionsArt, double x, int mantisse) {
         StringBuilder sb = new StringBuilder();
         switch (funktionsArt) {
             case UEBUNG6:

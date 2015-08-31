@@ -1,7 +1,4 @@
-package testing;
-
-import testing.funktionen.IFunktion;
-
+import funktionen.IFunktion;
 /**
  *
  */
@@ -13,7 +10,7 @@ public class Differentiation {
      * @param h
      * @return
      */
-    public double differenzieren_h_2(IFunktion f, double x, double h) {
+    public double differenzieren_h_2(funktionen.IFunktion f, double x, double h) {
         return (f.von(x + h) - f.von(x - h)) / (2 * h);
     }
 

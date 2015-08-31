@@ -1,9 +1,7 @@
-package testing;
+import funktionen.FunktionFactory;
+import funktionen.FunktionsArt;
+import funktionen.IFunktion;
 
-
-import testing.funktionen.FunktionFactory;
-import testing.funktionen.FunktionsArt;
-import testing.funktionen.IFunktion;
 
 public class Launcher {
 
@@ -25,15 +23,16 @@ public class Launcher {
         System.out.println("#                                Numerische Differentiation                             #");
         System.out.println("#=======================================================================================#");
 
-        Util.getBerechnungswerte(fa, x, mantisse);
+        // Ausgabe der Startwerte
+        Util.getStartwerte(fa, x, mantisse);
 
         System.out.println("#=======================================================================================#");
         System.out.println("#                                     Fehlerordung h^2                                  #");
         System.out.println("#=======================================================================================#");
 
-        // wird für die Extrapolation benötigt
+        // Deklaration und Initialisierung des Vorgängerwerts, welcher für die Extrapolationsberechnung benötigt wird
         double vorgaengerH2 = 0d;
-        // wird für die Bestimmung der Genauigkeit benötigt
+        // Deklaration und Initialisierung von Variablen, welche für die Bestimmung der Genauigkeit benötigt werden
         double besteGenauigkeitH2 = 1d;
         double besterAbstandswertH2 = 0d;
 
@@ -63,14 +62,13 @@ public class Launcher {
         // Ausgabe der maximal erreichbaren Genauigkeit bei der Extrapolation
         System.out.printf("Bei h: %s ist die beste Genauigkeit von %s vorhanden!\n\n" , besterAbstandswertH2, Util.runden(besteGenauigkeitH2, mantisse));
 
-
         System.out.println("#-----------------------------------------------------------#");
         System.out.println("#                       Fehlerordung h^4                    #");
         System.out.println("#-----------------------------------------------------------#");
 
-        // wird für die Extrapolation benötigt
+        // Deklaration und Initialisierung des Vorgängerwerts, welcher für die Extrapolationsberechnung benötigt wird
         double vorgaengerH4 = 0d;
-        // wird für die Bestimmung der Genauigkeit benötigt
+        // Deklaration und Initialisierung von Variablen, welche für die Bestimmung der Genauigkeit benötigt werden
         double besteGenauigkeitH4 = 21d;
         double besterAbstandswertH4 = 0d;
 

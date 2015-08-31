@@ -1,10 +1,10 @@
-package testing.funktionen;
+package funktionen;
 
 /**
  * Funktionsklasse
  * Created by Sebastian Kloppe on 23.08.2015.
  */
-public class FunktionThema12B implements IFunktion {
+public class FunktionThema12B implements funktionen.IFunktion {
     /**
      * berechnete Funktionswerte
      */

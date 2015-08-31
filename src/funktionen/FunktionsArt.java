@@ -1,4 +1,4 @@
-package testing.funktionen;
+package funktionen;
 
 /**
  *

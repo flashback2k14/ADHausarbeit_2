@@ -1,6 +1,6 @@
-package testing.funktionen;
+package funktionen;
 
-public class FunktionUebung6 implements IFunktion {
+public class FunktionUebung6 implements funktionen.IFunktion {
     /**
      *
      */
