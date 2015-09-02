@@ -29,7 +29,7 @@ public class Launcher {
         System.out.println("#=======================================================================================#");
 
         // Ausgabe der Startwerte
-        Util.getStartwerte(fa, x, mantisse);
+        Util.getStartwerte(fa, f, x, mantisse);
 
         System.out.println("#=======================================================================================#");
         System.out.println("#                                     Fehlerordung h^2                                  #");
@@ -107,7 +107,7 @@ public class Launcher {
             if (vorgaengerH4 != 0d) {
                 // Ermittlung der numerisch berechneten ersten Ableitung mittels Extrapolation
                 // des numerischen Wertes und dessen Vorgaengerwert
-                double extrapolationH4 = ep.extrapolation(h4, vorgaengerH2);
+                double extrapolationH4 = ep.extrapolation(h4, vorgaengerH4);
                 // Ermittlung des absoluten Fehlers, anhand des extrapolierten Wertes
                 // und des exakt berechneten Wertes fuer die Funktion
                 double fehlerExtrapolationH4 = extrapolationH4 - f.getExaktFstrichVonX();
