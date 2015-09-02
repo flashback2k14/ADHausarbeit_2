@@ -84,12 +84,7 @@ public class Launcher {
         // Deklaration und Initialisierung des Vorgaengerwerts, welcher fuer die Extrapolationsberechnung benoetigt wird
         double vorgaengerH4 = 0d;
         // Deklaration und Initialisierung von Variablen, welche fuer die Bestimmung der Genauigkeit benoetigt werden
-        double besteGenauigkeitH4;
-        if (fa.equals(FunktionsArt.UEBUNG6)) {
-            besteGenauigkeitH4 = 1d;
-        } else {
-            besteGenauigkeitH4 = 21d;
-        }
+        double besteGenauigkeitH4 = 1d;
         double besterAbstandswertH4 = 0d;
 
         // numerische Berechnung der ersten Ableitung mittels Fehlerordnung h^4
