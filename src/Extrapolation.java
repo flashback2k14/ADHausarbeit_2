@@ -4,13 +4,15 @@
  */
 public class Extrapolation {
     /**
-     * Methode zum extrapolieren mittels Richardson Verfahren
-     * @param y1 numerisch berechneter erste Ableitungswert
-     * @param y2 numerisch berechneter erste Ableitungswert (Vorgaengerwert von y1)
-     * @return numerisch berechnet extrapolierte erste Ableitung
+     * Methode zum extrapolieren
+     * @param x1 numerisch berechneter erste Ableitungswert
+     * @param x2 numerisch berechneter erste Ableitungswert (Nachfolgerwert von x1)
+     * @param alpha Fehlerordnung
+     * @param beta Unterschiedswert der beiden Abstandswert
+     * @return numerisch berechnet, extrapolierte erste Ableitung
      */
-    public double extrapolation(double y1, double y2) {
-        return y2 + ((y2 - y1) / 3);
+    public double extrapolation(double x1, double x2, double alpha, double beta) {
+        return (x2 - Math.pow(beta, alpha) * x1) / (1 - Math.pow(beta, alpha));
     }
 
     /**

@@ -20,6 +20,8 @@ public class FunktionFactory {
                 return new FunktionUebung6();
             case THEMA12B:
                 return new FunktionThema12B();
+            case THEMA12A:
+                return new FunktionThema12A();
             default:
                 return new FunktionThema12B();
         }

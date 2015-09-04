@@ -19,6 +19,8 @@ public class Util {
                     return FunktionsArt.UEBUNG6;
                 case "THEMA12B":
                     return FunktionsArt.THEMA12B;
+                case "THEMA12A":
+                    return FunktionsArt.THEMA12A;
                 default:
                     return FunktionsArt.THEMA12B;
             }
@@ -93,6 +95,9 @@ public class Util {
                 break;
             case THEMA12B:
                 sb.append("Funktion:\t\t\t\t\tThema 12B").append("\n");
+                break;
+            case THEMA12A:
+                sb.append("Funktion:\t\t\t\t\tThema 12A").append("\n");
                 break;
             default:
                 break;
